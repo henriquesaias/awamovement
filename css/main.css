@@ -216,6 +216,12 @@ iframe {
       background: url(https://www.agamirecords.org/v2/black-noise.gif) repeat;
   }
 
+  @media (max-width: 500px) {
+  .hidden-mobile {
+    display: none
+  }
+}
+
 
 /*
 Fonts
@@ -2769,7 +2775,7 @@ li {
             letter-spacing: 1px; } }
     .tabs-type-1 .tabs-wrapper--header-wrapper .header-wrapper--header .header--underline-fill {
       height: 2px;
-      background-color: var(--primary-color-1);
+      background-color: var(--primary-font-color);
       position: absolute;
       bottom: -2px;
       z-index: 1; }

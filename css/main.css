@@ -299,6 +299,19 @@ Fonts
     --black-color-2: #060606;
     --primary-border-color: rgba(152, 152, 152, 0.2); }
 
+    /* :root {
+      --primary-color-1: #111111;
+      --primary-color-2: #060606;
+      --white-color-1: #111111;
+      --white-color-2: #060606;
+      --selection-background: #080808;
+      --selection-color: #f3f3f3;
+      --primary-font-color: #9c9ca4;
+      --primary-font: 'Poppins';
+      --black-color-1: #f3f3f3;
+      --black-color-2: #dadada;
+      --primary-border-color: rgba(152, 152, 152, 0.2); } */
+
 body {
   line-height: 1.8;
   font-size: 15px;
@@ -1126,6 +1139,10 @@ li {
 .portfolio-metro-section {
   padding: 30px 7.5px 7.5px 7.5px; }
 
+.clients-slider {
+  padding-bottom: 15px;
+}
+
 .clients-slider .clients-slider--clients-wrapper {
   height: 100%; }
 
@@ -1748,19 +1765,19 @@ li {
         opacity: 0;
         transition: all .5s ease; }
         .portfolio-slider-type-1 .portfolio-item .portfolio-item--content-wrapper .content-wrapper--box-tilt .box-tilt--title {
-          /* color: var(--white-color-1); */
-          color: #677EDA;
+          color: var(--black-color-1);
+          /* color: #677EDA; */
           margin-bottom: 5px; }
         .portfolio-slider-type-1 .portfolio-item .portfolio-item--content-wrapper .content-wrapper--box-tilt .box-tilt--tag {
-          color: #6E5FBE;
+          /* color: #6E5FBE; */
           display: flex;
           align-items: center;
           line-height: 1;
-          /* color: var(--white-color-1); */
+          color: var(--black-color-1);
          }
           .portfolio-slider-type-1 .portfolio-item .portfolio-item--content-wrapper .content-wrapper--box-tilt .box-tilt--tag span {
             font-size: 10px;
-            color: var(--white-color-2);
+            color: var(--black-color-2);
             margin: 0 10px; }
     .portfolio-slider-type-1 .portfolio-item:after {
       content: ' ';
@@ -2350,7 +2367,7 @@ li {
       transform: scale(1.1); }
 
 .testimonials-slider-type-1 {
-  background-color: var(--primary-color-1);
+  /* background-color: var(--primary-color-1); */
   padding: 0 50px;
   position: relative;
   z-index: 10; }
@@ -3908,8 +3925,8 @@ li {
     display: block;
     width: 100%;
     height: 100%;
-    /* background: linear-gradient(to left, var(--primary-color-1) 0%, var(--primary-color-2) 100%); */
-    background: linear-gradient(to left, #677EDA 0%, transparent 100%);
+    background: linear-gradient(to left, var(--primary-color-1) 0%, var(--primary-color-2) 100%);
+    /* background: linear-gradient(to left, #677EDA 0%, transparent 100%); */
     transition: all .4s ease-in-out;
     position: absolute;
     top: 0;

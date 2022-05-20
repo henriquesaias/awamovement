@@ -1,6 +1,6 @@
 <?php
 if ( ( isset( $_POST['name'] ) && $_POST['name'] != "" ) && ( isset( $_POST['phone'] ) && $_POST['phone'] != "" ) && ( isset( $_POST['email'] ) && $_POST['email'] != "" ) ) {
-	$to      = 'nastyakorbet@gmail.com';
+	$to      = 'goretuzk@gmail.com';
 	$subject = 'Contact form';
 	$message = '
 			                <html>
@@ -10,7 +10,7 @@ if ( ( isset( $_POST['name'] ) && $_POST['name'] != "" ) && ( isset( $_POST['pho
 			                    <body>
 			                        <p>Name: ' . $_POST['name'] . '</p>
 			                        <p>Phone: ' . $_POST['phone'] . '</p>                        
-			                        <p>Email: ' . $_POST['phone'] . '</p>                        
+			                        <p>Email: ' . $_POST['email'] . '</p>                        
 			                        <p>Message: ' . $_POST['message'] . '</p>                        
 			                    </body>
 			                </html>';

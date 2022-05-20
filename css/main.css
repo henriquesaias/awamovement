@@ -3374,6 +3374,10 @@ li {
 .info-banners-type-1 .image-wrapper {
   height: 400px; }
 
+.info-banners-section {
+  padding-top: 1em;
+}
+
 .info-banners-type-1 .content-wrapper {
   display: flex;
   align-items: center;

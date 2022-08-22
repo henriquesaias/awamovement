@@ -1200,6 +1200,9 @@ li {
 
 .team-section {
   padding-bottom: 15px; }
+  .content--author-wrapper>*, .content-wrapper--socials li {
+    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+  }
 
 .four-columns-section {
   width: 100%;
@@ -1785,7 +1788,7 @@ li {
             font-size: 10px;
             color: var(--black-color-2);
             margin: 0 10px; }
-    .portfolio-slider-type-1 .portfolio-item:after {
+    .portfolio-slider-type-1 .portfolio-item:not(.senda-verde):after {
       content: ' ';
       display: block;
       width: 100%;

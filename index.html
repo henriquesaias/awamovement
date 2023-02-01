@@ -8,7 +8,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-transcluent">
   <meta name="format-detection" content="telephone=no">
   <title>AWA Movement</title>
   <!-- Font Awesome -->
@@ -31,18 +31,19 @@
 </head>
 
 <body>
+
+
+  <!-- PAGE START -->
   <main class="page-wrapper">
     <!-- Page Loader -->
     <div class="page-loader">
       <img src="images/logo.png" style="filter: brightness(2)" alt="AWA Movement logo" class="animate img-fluid">
     </div>
-
     <!-- Cursor -->
     <div class="cursor">
       <div class="cursor--inner cursor--inner-circle"></div>
       <div class="cursor--inner cursor--inner-text"></div>
     </div>
-
     <!-- Navbar -->
     <nav class="navigation-menu">
       <!-- LOGO -->
@@ -54,17 +55,41 @@
             </div>
           </a>
         </div>
+        <div class="right-side">
+          <!-- Toggle-->
+          <div class="navigation-menu--toggle-btn navigation-button">
+            <div class="toggle-btn--menu">Menu</div>
+            <div class="toggle-btn--wrapper-toggles">
+              <div class="wrapper-toggles--one"></div>
+              <div class="wrapper-toggles--two"></div>
+              <div class="wrapper-toggles--three"></div>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- Main Menu-->
+      <div
+        class="navigation-menu--inner-wrapper bg-size-cover bg-position-center bg-attachment-fixed overlay black-overlay"
+        style="background-image: url('images/menu/bg.jpg'); background-size: auto; background-repeat: repeat;">
+        <div class="inner-wrapper--menu-wrapper">
+          <ul class="menu-wrapper--menu-list active-window">
+            <li class="menu-item"><a href="index.html">Home</a></li>
+            <li class="menu-item"><a href="awa.html">AWA</a></li>
+            <li class="menu-item"><a href="events.html">Events</a></li>
+            <li class="menu-item">Trainings <small>(coming soon)</small></li>
+          </ul>
+        </div>
+      </div>
       <div class="navigation--sidebar-panel">
+        <div class="sidebar-panel-toggle-close">
+          <i class="fa fa-times"></i>
+        </div>
       </div>
       </div>
     </nav>
-
     <!-- Page Content -->
     <div class="content-page-wrapper">
-
-      <!-- Full-screen slider -->
+      <!-- Hero-Header -->
       <header class="hero-header">
         <div class="swiper-container swiper-hero">
           <div class="swiper-wrapper">
@@ -73,16 +98,24 @@
                 <div class="container">
                   <div class="hero-content--hero-wrapper">
                     <div class="hero-wrapper--content">
-                      <h1 class="content--hero-heading">Headline 1</h1>
-                      <h1 class="content--back-title">Headline 1</h1>
-                      <p class="content--hero-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit
+                      <h1 class="content--hero-heading">Whole-istic</h1>
+                      <h1 class="content--back-title">Whole<br>istic</h1>
+                      <p class="content--hero-subtitle">Conscious gatherings, trainings and retreat experiences<br>
+                        <br>We co-create moments that bring you to the present and that you can bring home to your
+                        day-to-day life
                       </p>
                       <div style="display: flex">
                         <div class="button-wrapper" style="margin-right: 2em;">
-                          <a href="about.html" class="button btn-type-2">Call To Action 1</a>
+                          <a target="_blank" href="about.html" class="button btn-type-2">Book</a>
+                          <!-- TODO: Book button should lead to wetravel -->
+                        </div>
+                        <div class="button-wrapper">
+                          <a target="_blank" href="https://youtu.be/ezohYVXU3cY" class="button btn-type-2">Watch
+                            video</a>
                         </div>
                       </div>
                     </div>
+
                   </div>
                 </div>
               </div>
@@ -92,14 +125,35 @@
                 <div class="container">
                   <div class="hero-content--hero-wrapper">
                     <div class="hero-wrapper--content">
-                      <h1 class="content--hero-heading">Headline 2</h1>
-                      <h1 class="content--back-title">Headline 2</h1>
-                      <p class="content--hero-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                      <h1 class="content--hero-heading">Ecstatic Dance</h1>
+                      <h1 class="content--back-title">Ecstatic<br>Dance</h1>
+                      <p class="content--hero-subtitle">Events in Ibiza, Mallorca and Portugal.<br>Join the next
+                        wave.</p>
                       <div class="button-wrapper">
-                        <a href="about.html" class="button btn-type-2">Call To Action 2</a>
+                        <a href="about.html" class="button btn-type-2">See Calendar</a>
+                        <!-- TODO: Calendar button should lead to linktree -->
                       </div>
                     </div>
 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide noise-bg" style="background-image: url('images/home slider/2.jpeg')">
+              <div class="hero-header--hero-content">
+                <div class="container">
+                  <div class="hero-content--hero-wrapper">
+                    <div class="hero-wrapper--content">
+                      <h1 class="content--hero-heading">Art.Music<br />& Digital</h1>
+                      <h1 class="content--back-title">Art.Music & Digital</h1>
+                      <p class="content--hero-subtitle">Learn music with your favorite producers.
+                        <br>Book a weekend crash-course.
+                        <!-- TODO: get text for this and call to action -->
+                      </p>
+                      <div class="button-wrapper">
+                        <a href="about.html" class="button btn-type-2">Know More</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -109,30 +163,306 @@
           <div class="swiper-button-next-default"><i class="fa fa-angle-right"></i></div>
         </div>
         <div class="hero-header--share-form">
+          <a href="#">
+            <div class="share-form--share-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="share-form--share-info">
+              <p>Newsletter</p>
+              <!-- TODO hookup mailchimp popup subscribe form -->
+            </div>
+          </a>
         </div>
         <div class="hero-header--socials">
           <div class="socials--wrapper">
             <ul class="social-icons-type-1">
-              <!-- TODO: put the right social media links here -->
-              <li><a href="index.html" class="twitter"><i class="fab fa-youtube"></i></a></li>
-              <li><a href="https://www.instagram.com/awa.movement"><i class="fab fa-instagram"></i></a></li>
-              <li><a href="https://discord.gg/qAZQvcEQYb" class="facebook"><i class="fab fa-discord"></i></a></li>
+              <li><a target="_blank" href="https://www.youtube.com/@artivistasrecreando2879" class="twitter"
+                  title="Check out AWA Movement on youtube"><i class="fab fa-youtube"></i></a></li>
+              <li><a target="_blank" href="https://www.instagram.com/awa.movement" title="Connect on instagram"><i
+                    class="fab fa-instagram"></i></a></li>
+              <li><a target="_blank" href="https://t.me/+yHp5VGm6_FwxN2Y0" title="Join our telegram group"
+                  class="facebook"><i class="fab fa-telegram"></i></a></li>
+              <li><a target="_blank" href="https://chat.whatsapp.com/JpobDnKS560I0mJ1XZa0Ap"
+                  title="Join our whatsapp group" class="facebook"><i class="fab fa-whatsapp"></i></a></li>
             </ul>
           </div>
         </div>
       </header>
 
-      <!-- Previous events slider -->
+      <!-- Feature boxes-->
+      <section class="large-section feature-boxes">
+        <div class="container">
+          <div class="row feature-box-type-1">
+            <div class="col-xl-4 rev-block animation-element">
+              <div class="feature-box-type-1--inner-wrapper">
+                <div class="inner-wrapper--number">
+                  <p>01</p>
+                </div>
+                <div class="inner-wrapper--content-wrapper">
+                  <div class="content-wrapper--title">
+                    <h5>Retreats & Conscious Gatherings</h5>
+                  </div>
+                  <div class="content-wrapper--subtitle">
+                    <p>We serve, share, empower and deliver meaningful and unforgettable life changing - out of the box
+                      experiences.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 rev-block animation-element second-animation">
+              <div class="feature-box-type-1--inner-wrapper">
+                <div class="inner-wrapper--number">
+                  <p>02</p>
+                </div>
+                <div class="inner-wrapper--content-wrapper">
+                  <div class="content-wrapper--title">
+                    <h5>Trainings & Online Workshops</h5>
+                  </div>
+                  <div class="content-wrapper--subtitle">
+                    <p>Through holistic education and conscious activities shared from the heart we want to inspire,
+                      unite, raise awareness and transform the rebirth of a new era.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 rev-block animation-element third-animation">
+              <div class="feature-box-type-1--inner-wrapper">
+                <div class="inner-wrapper--number">
+                  <p>03</p>
+                </div>
+                <!-- TODO: Change the content here for the 3rd one -->
+                <div class="inner-wrapper--content-wrapper">
+                  <div class="content-wrapper--title">
+                    <h5>Tailor-made Experiences</h5>
+                  </div>
+                  <div class="content-wrapper--subtitle">
+                    <p>We welcome your guests and visitors to fully immerse in a 1:1 practice or ceremony with our
+                      world-class facilitators, and enjoy the long-lasting impact throughout their stay.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Info Banners-->
+      <section class="info-banners-section">
+        <div class="info-banners-type-1">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xl-4">
+                <div class="image-wrapper bg-size-cover bg-position-center"
+                  style="background-image: url('images/info/1.jpg')">
+                </div>
+              </div>
+              <div class="col-xl-4 content-wrapper responsive-padding">
+                <div class="black-background">
+                  <div class="content-wrapper--content" data-aos="zoom-in" data-aos-delay="100"
+                    data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out" data-aos-duration="700">
+                    <div class="content--number-wrapper heading-stroke">
+                      <img src="images/cacao icon.png" width="100" />
+                    </div>
+                    <div class="content--description-wrapper">
+                      <h5>Ecstatic Dance</h5>
+                      <p>The practice of ecstatic dance is only a few years old. Gabrielle Roth revived it in the 1970s,
+                        focusing on transpersonal psychology, Gestalt therapy, and modern body-oriented techniques.</p>
+                      <!-- <a href="event.html" class="content-wrapper--link">
+                        <p>Try it out</p>
+                        <i class="fa fa-long-arrow-alt-right"></i>
+                      </a> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 info-banners-type-1--image-inner-wrapper">
+                <div class="image-wrapper bg-size-cover bg-position-center"
+                  style="background-image: url('images/info/11.jpeg')">
+                </div>
+              </div>
+            </div>
+            <div class="row second-row">
+              <div class="col-xl-4 content-wrapper">
+                <div class="black-background">
+                  <div class="content-wrapper--content" data-aos="zoom-in" data-aos-delay="250"
+                    data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out" data-aos-duration="700">
+                    <div class="content--number-wrapper heading-stroke">
+                      <img src="images/cacao icon.png" width="100" />
+                    </div>
+                    <div class="content--description-wrapper">
+                      <h5>Music Production</h5>
+                      <p>We fine-tune our courses to play out in an interactive and fun way, to engage you and make you
+                        come out the other end overflowing with inspiration + equipped with the tools to manifest it.
+                      </p>
+                      <!-- <a href="blog-single.html" class="content-wrapper--link">
+                        <p>Learn more</p>
+                        <i class="fa fa-long-arrow-alt-right"></i>
+                      </a> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 responsive-padding">
+                <div class="image-wrapper bg-size-cover bg-position-center"
+                  style="background-image: url('images/info/10.jpeg')">
+                </div>
+              </div>
+              <div class="col-xl-4 content-wrapper">
+                <div class="black-background">
+                  <div class="content-wrapper--content" data-aos="zoom-in" data-aos-delay="350"
+                    data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out" data-aos-duration="700">
+                    <div class="content--number-wrapper heading-stroke">
+                      <img src="images/cacao icon.png" width="100" />
+                    </div>
+                    <div class="content--description-wrapper">
+                      <h5>Holistic Concierge</h5>
+                      <p>Lorem ipsum dolor suscipit sit sunt ame consectetur adipisicing. Earum consect</p>
+                      <!-- <a href="blog-single.html" class="content-wrapper--link">
+                        <p>Learn more</p>
+                        <i class="fa fa-long-arrow-alt-right"></i>
+                      </a> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-4">
+                <div class="image-wrapper bg-size-cover bg-position-center"
+                  style="background-image: url('images/info/12.jpeg')">
+                </div>
+              </div>
+              <div class="col-xl-4 content-wrapper responsive-padding">
+                <div class="black-background">
+                  <div class="content-wrapper--content" data-aos="zoom-in" data-aos-delay="100"
+                    data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out" data-aos-duration="700">
+                    <div class="content--number-wrapper heading-stroke">
+                      <img src="images/cacao icon.png" width="100" />
+                    </div>
+                    <div class="content--description-wrapper">
+                      <h5>Cacao Gratitude Circle</h5>
+                      <p>A cacao ceremony opens your heart and helps you let go of what is no longer serving you. Tune
+                        into the sacred wisdom of indigenous tradition.</p>
+                      <!-- <a href="event.html" class="content-wrapper--link">
+                        <p>Try it out</p>
+                        <i class="fa fa-long-arrow-alt-right"></i>
+                      </a> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 info-banners-type-1--image-inner-wrapper">
+                <div class="image-wrapper bg-size-cover bg-position-center"
+                  style="background-image: url('images/info/2.jpg')">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Upcoming events calendar section -->
+      <section class="recent-posts large-section">
+        <div class="container">
+          <div class="row recent-posts-section--posts-wrapper">
+            <div class="col-xl-3 section-heading padding-right">
+              <h2 class="section-heading--title">
+                Next events
+              </h2>
+              <p class="section-heading--subtitle">
+                Lorem ipsum dolor sit amet consec adipisicing elit repel
+              </p>
+              <div class="button-wrapper">
+                <a class="button btn-type-2" href="calendar.html">See all</a>
+                <!-- TODO: link this button to wetravel AWA main profile page -->
+              </div>
+            </div>
+            <div class="col-xl-9">
+              <div class="recent-posts-type-1">
+                <div class="recent-posts-type-1--posts-wrapper first-post">
+                  <div class="posts-wrapper--post">
+                    <div class="post--image">
+                      <a href="calendar.html">
+                        <img
+                          src="https://static.wixstatic.com/media/e67b36_6e2a6144dbae4e78b1b3712f1353c117~mv2.jpg/v1/fill/w_1024,h_768,al_c,q_85,enc_auto/e67b36_6e2a6144dbae4e78b1b3712f1353c117~mv2.jpg"
+                          alt="" class="img-fluid">
+                      </a>
+                    </div>
+                    <div class="post--content-wrapper">
+                      <div class="content-wrapper--date">
+                        <div class="date--day heading-stroke">
+                          <span>5</span>
+                        </div>
+                        <div class="date--month-year">
+                          <p>June, 2022</p>
+                        </div>
+                      </div>
+                      <div class="content-wrapper--title">
+                        <div class="title--tag">
+                          <a href="calendar.html">
+                            <p>Retreat</p>
+                          </a>
+                        </div>
+                        <a href="calendar.html">
+                          <h5 class="title--main-title">Music Production Retreat in Portugal</h5>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="recent-posts-type-1--posts-wrapper second-post">
+                  <div class="posts-wrapper--post">
+                    <div class="post--image">
+                      <a href="calendar.html">
+                        <img
+                          src="https://static.wixstatic.com/media/e67b36_7b329c564df14a1da469c50195173c81~mv2.jpg/v1/fill/w_1024,h_768,al_c,q_85,enc_auto/e67b36_7b329c564df14a1da469c50195173c81~mv2.jpg"
+                          alt="" class="img-fluid">
+                      </a>
+                    </div>
+                    <div class="post--content-wrapper">
+                      <div class="content-wrapper--date">
+                        <div class="date--day heading-stroke">
+                          <span>1 - 3</span>
+                        </div>
+                        <div class="date--month-year">
+                          <p>July, 2022</p>
+                        </div>
+                      </div>
+                      <div class="content-wrapper--title">
+                        <div class="title--tag">
+                          <a href="calendar.html">
+                            <p>Ecstatic Dance</p>
+                          </a>
+                        </div>
+                        <a href="calendar.html">
+                          <h5 class="title--main-title">Cacao Ceremony & Ecstatic Dance in Mallorca</h5>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Venues Items Slider -->
       <section class="large-section portfolio-section">
         <div class="container">
           <div class="row portfolio-section--wrapper">
             <div class="col-xl-3 section-heading padding-right">
               <h2 class="section-heading--title">
-                Previous Events
+                Venues
               </h2>
               <p class="section-heading--subtitle">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit
               </p>
+              <div class="button-wrapper">
+                <a class="button btn-type-2" href="portfolio.html">Apply</a>
+              </div>
             </div>
             <div class="col-xl-9">
               <div class="portfolio-slider">
@@ -141,11 +471,11 @@
                     <div class="swiper-slide">
                       <div class="tilt-wrapper portfolio-item" data-tilt-value="10" data-tilt-speed="2000"
                         data-tilt-scale="1" data-tilt-perspective="1200"
-                        style="background-image: url('https://static.wixstatic.com/media/e67b36_99efff871ff1436981b50fa97452399b~mv2.jpg/v1/fill/w_1024,h_768,al_c,q_85,enc_auto/e67b36_99efff871ff1436981b50fa97452399b~mv2.jpg')">
+                        style="background-image: url('https://static.wixstatic.com/media/e67b36_6e2a6144dbae4e78b1b3712f1353c117~mv2.jpg/v1/fill/w_1024,h_768,al_c,q_85,enc_auto/e67b36_6e2a6144dbae4e78b1b3712f1353c117~mv2.jpg')">
                         <div class="portfolio-item--content-wrapper">
                           <div class="content-wrapper--box-tilt">
-                            <h4 class="box-tilt--title">Event 1</h4>
-                            <p class="box-tilt--tag">Mallorca <span>/</span> August 2022</p>
+                            <h4 class="box-tilt--title">Volunteer</h4>
+                            <p class="box-tilt--tag">Portugal <span>/</span> Music retreat</p>
                           </div>
                         </div>
                       </div>
@@ -156,8 +486,8 @@
                         style="background-image: url('https://static.wixstatic.com/media/e67b36_99efff871ff1436981b50fa97452399b~mv2.jpg/v1/fill/w_1024,h_768,al_c,q_85,enc_auto/e67b36_99efff871ff1436981b50fa97452399b~mv2.jpg')">
                         <div class="portfolio-item--content-wrapper">
                           <div class="content-wrapper--box-tilt">
-                            <h4 class="box-tilt--title">Event 2</h4>
-                            <p class="box-tilt--tag">Mallorca <span>/</span> August 2022</p>
+                            <h4 class="box-tilt--title">Fire performer</h4>
+                            <p class="box-tilt--tag">Ibiza <span>/</span> Ecstatic Dance</p>
                           </div>
                         </div>
                       </div>
@@ -168,8 +498,8 @@
                         style="background-image: url('https://static.wixstatic.com/media/e67b36_7b329c564df14a1da469c50195173c81~mv2.jpg/v1/fill/w_1024,h_768,al_c,q_85,enc_auto/e67b36_7b329c564df14a1da469c50195173c81~mv2.jpg')">
                         <div class="portfolio-item--content-wrapper">
                           <div class="content-wrapper--box-tilt">
-                            <h4 class="box-tilt--title">Event 3</h4>
-                            <p class="box-tilt--tag">Mallorca <span>/</span> August 2022</p>
+                            <h4 class="box-tilt--title">DJ</h4>
+                            <p class="box-tilt--tag">Mallorca <span>/</span> Cacao Ceremony</p>
                           </div>
                         </div>
                       </div>
@@ -180,8 +510,8 @@
                         style="background-image: url('https://static.wixstatic.com/media/e67b36_a46e01ea140d49c791514247a59c2184~mv2.jpg/v1/fill/w_1024,h_768,al_c,q_85,enc_auto/e67b36_a46e01ea140d49c791514247a59c2184~mv2.jpg)">
                         <div class="portfolio-item--content-wrapper">
                           <div class="content-wrapper--box-tilt">
-                            <h4 class="box-tilt--title">Event 4</h4>
-                            <p class="box-tilt--tag">Mallorca <span>/</span> August 2022</p>
+                            <h4 class="box-tilt--title">Copywriter</h4>
+                            <p class="box-tilt--tag">Remote opportunity</p>
                           </div>
                         </div>
                       </div>
@@ -197,78 +527,77 @@
         </div>
       </section>
 
-      <!-- Upcoming events slider -->
-      <section class="recent-posts large-section">
-        <div class="container">
-          <div class="row recent-posts-section--posts-wrapper">
-            <div class="col-xl-3 section-heading padding-right">
-              <h2 class="section-heading--title">
-                Next events
-              </h2>
-              <p class="section-heading--subtitle">
-                Lorem ipsum dolor sit amet consec adipisicing elit repel
-              </p>
-            </div>
-            <div class="col-xl-9">
-              <div class="recent-posts-type-1">
-                <div class="recent-posts-type-1--posts-wrapper first-post">
-                  <div class="posts-wrapper--post">
-                    <div class="post--image">
-                      <a href="event.html">
-                        <img
-                          src="https://static.wixstatic.com/media/e67b36_6e2a6144dbae4e78b1b3712f1353c117~mv2.jpg/v1/fill/w_1024,h_768,al_c,q_85,enc_auto/e67b36_6e2a6144dbae4e78b1b3712f1353c117~mv2.jpg"
-                          alt="" class="img-fluid">
-                      </a>
+      <!-- 4 columns section testimonials-->
+      <h2 class="section-heading--title" style="text-align: center">
+        Testimonials
+      </h2>
+      <section class="four-columns-section">
+        <div class="one-column short hidden-mobile"></div>
+        <div class="two-columns testimonials-slider-type-1">
+          <div class="swiper-container swiper-testimonials">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonials-slider-wrapper">
+                  <div class="testimonials-slider-wrapper--head">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dicta, dolor dolore expedita
+                      ipsa laudantium perferendis repell"</p>
+                  </div>
+                  <div class="testimonials-slider-wrapper--body">
+                    <div class="body--testimonial-img">
+                      <img src="https://jk-studio-dev.com/templates/norto/images/team/team-1.jpg" alt=""
+                        class="img-fluid">
                     </div>
-                    <div class="post--content-wrapper">
-                      <div class="content-wrapper--date">
-                        <div class="date--day heading-stroke">
-                          <span>5</span>
-                        </div>
-                        <div class="date--month-year">
-                          <p>June 2022</p>
-                        </div>
+                    <div class="body--testimonial-info">
+                      <div class="testimonial-info--name">
+                        <h6>Gabrielle Donati</h6>
                       </div>
-                      <div class="content-wrapper--title">
-                        <div class="title--tag">
-                          <a href="event.html">
-                            <p>Retreat</p>
-                          </a>
-                        </div>
-                        <a href="event.html">
-                          <h5 class="title--main-title">Music Production Retreat in Portugal</h5>
-                        </a>
+                      <div class="testimonial-info--position">
+                        <p>Co-Founder Momentom Movement</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="recent-posts-type-1--posts-wrapper second-post">
-                  <div class="posts-wrapper--post">
-                    <div class="post--image">
-                      <a href="event.html">
-                        <img
-                          src="https://static.wixstatic.com/media/e67b36_7b329c564df14a1da469c50195173c81~mv2.jpg/v1/fill/w_1024,h_768,al_c,q_85,enc_auto/e67b36_7b329c564df14a1da469c50195173c81~mv2.jpg"
-                          alt="" class="img-fluid">
-                      </a>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonials-slider-wrapper">
+                  <div class="testimonials-slider-wrapper--head">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dicta, dolor dolore expedita
+                      ipsa laudantium perferendis repell"</p>
+                  </div>
+
+                  <div class="testimonials-slider-wrapper--body">
+                    <div class="body--testimonial-img">
+                      <img src="https://jk-studio-dev.com/templates/norto/images/team/team-2.jpg" alt=""
+                        class="img-fluid">
                     </div>
-                    <div class="post--content-wrapper">
-                      <div class="content-wrapper--date">
-                        <div class="date--day heading-stroke">
-                          <span>1 - 3</span>
-                        </div>
-                        <div class="date--month-year">
-                          <p>July 2022</p>
-                        </div>
+                    <div class="body--testimonial-info">
+                      <div class="testimonial-info--name">
+                        <h6>Portrait XO</h6>
                       </div>
-                      <div class="content-wrapper--title">
-                        <div class="title--tag">
-                          <a href="event.html">
-                            <p>Ecstatic Dance</p>
-                          </a>
-                        </div>
-                        <a href="event.html">
-                          <h5 class="title--main-title">Cacao Ceremony & Ecstatic Dance in Mallorca</h5>
-                        </a>
+                      <div class="testimonial-info--position">
+                        <p>Award-winning AI Musician</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonials-slider-wrapper">
+                  <div class="testimonials-slider-wrapper--head">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dicta, dolor dolore expedita
+                      ipsa laudantium perferendis repell"</p>
+                  </div>
+                  <div class="testimonials-slider-wrapper--body">
+                    <div class="body--testimonial-img">
+                      <img src="https://jk-studio-dev.com/templates/norto/images/team/team-3.jpg" alt=""
+                        class="img-fluid">
+                    </div>
+                    <div class="body--testimonial-info">
+                      <div class="testimonial-info--name">
+                        <h6>Cristoforo Gaetani</h6>
+                      </div>
+                      <div class="testimonial-info--position">
+                        <p>Founder Agami Records</p>
                       </div>
                     </div>
                   </div>
@@ -279,7 +608,354 @@
         </div>
       </section>
 
-      <!-- Give back slider -->
+      <!-- Services -->
+      <section class="services-section large-section">
+        <div class="container">
+          <div class="row services-section--services-wrapper">
+
+            <div class="col-xl-4 col-md-6">
+              <div class="services-type-1">
+                <div class="services-type-1--inner-wrapper tilt-wrapper" data-tilt-value="8" data-tilt-speed="1000"
+                  data-tilt-scale="1" data-tilt-perspective="800">
+                  <div class="inner-wrapper--icon">
+                    <i class="fas fa-magic"></i>
+                  </div>
+                  <div class="inner-wrapper--title">
+                    <h6>Conscious Gatherings</h6>
+                  </div>
+                  <div class="inner-wrapper--subtitle">
+                    <p>We co-create moments that bring you to the present and that you can bring home to your
+                      day-to-day life.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <div class="services-type-1 mb-0">
+                <div class="services-type-1--inner-wrapper tilt-wrapper" data-tilt-value="8" data-tilt-speed="1000"
+                  data-tilt-scale="1" data-tilt-perspective="800">
+                  <div class="inner-wrapper--icon">
+                    <i class="fas fa-broadcast-tower"></i>
+                  </div>
+                  <div class="inner-wrapper--title">
+                    <h6>Online Trainings</h6>
+                  </div>
+                  <div class="inner-wrapper--subtitle">
+                    <p>Learn from your favorite producers.
+                      <br>Access all the courses from previous residencies.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 heading-wrapper padding-left">
+              <h5 class="heading-wrapper--heading white-color">
+                Book an experience or access our courses
+              </h5>
+              <p class="heading-wrapper--subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipisicing el abb accusamus delectus
+              </p>
+              <div class="button-wrapper">
+                <a class="button btn-type-1" href="course.html">Learn more<i
+                    class="fas fa-long-arrow-alt-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quote and Video Button -->
+      <section
+        class="large-section quote-section bg-position-center bg-attachment-fixed overlay dark-overlay bg-size-cover"
+        style="background-image: url('images/quote/bg.jpg')">
+        <div class="container">
+          <div class="row quote-inner-wrapper">
+            <div class="col-xl-6">
+              <div class="video-wrapper-type-1">
+                <a class="video-toggle-type-1 video-popup" href="#video-post-1">
+                  <div class="play-btn-scale">
+                    <i class="fa fa-play"></i>
+                  </div>
+                </a>
+                <div id="video-post-1" class="white-popup-block mfp-hide mfp-fade">
+                  <div class="modal-video-box">
+                    <iframe src="https://www.youtube.com/embed/Sv511KEiIJQ" allowfullscreen></iframe>
+                    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <div class="quote-inner-wrapper--quote-wrapper">
+                <div class="quote-wrapper--quote-icon">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <div class="quote-wrapper--title">
+                  <h4>
+                    The road to success and the road to failure are almost exactly the same
+                  </h4>
+                </div>
+                <div class="quote-wrapper--subtitle">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis delectus dolores
+                    ducimus esse nam provident sapiente sed. Aliquid, architecto conseq cupiditate
+                    exercitationem, expedita explicabo nam odio quaerat
+                    quis saepe.</p>
+                </div>
+                <div class="quote-wrapper--signature">
+                  <img src="https://jk-studio-dev.com/templates/norto/images/clients/signature.png" alt=""
+                    class="img-fluid">
+                </div>
+                <div class="quote-wrapper--author">
+                  <a href="portfolio-single.html">
+                    <h6>Caro Mish</h6>
+                  </a>
+                  <p class="author--position">Founder</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team section -->
+      <section class="team-section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+              <div class="swiper-container swiper-team-type-1 team-slider-type-1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="member-wrapper">
+                      <div class="member-wrapper--img-wrapper">
+                        <img src="images/team/asia.jpeg" alt="Intiche" class="img-fluid">
+                      </div>
+                      <div class="member-wrapper--member-description">
+                        <div class="member-description--content-wrapper">
+                          <div class="content-wrapper--socials">
+                            <ul class="social-icons-type-2">
+                              <li><a href="index.html"><i class="fab fa-facebook-f"></i></a></li>
+                              <li><a href="index.html"><i class="fab fa-twitter"></i></a></li>
+                              <li><a href="https://www.instagram.com/_intiche_"><i class="fab fa-instagram"></i></a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="content-wrapper--content">
+                            <div class="content--author-wrapper">
+                              <p class="content--position">Psychologist / Yoga Facilitator</p>
+                              <h5 class="content--name">Asia</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="member-wrapper">
+                      <div class="member-wrapper--img-wrapper">
+                        <img src="images/team/inti.jpg" alt="Intiche" class="img-fluid">
+                      </div>
+                      <div class="member-wrapper--member-description">
+                        <div class="member-description--content-wrapper">
+                          <div class="content-wrapper--socials">
+                            <ul class="social-icons-type-2">
+                              <li><a href="index.html"><i class="fab fa-facebook-f"></i></a></li>
+                              <li><a href="index.html"><i class="fab fa-twitter"></i></a></li>
+                              <li><a href="https://www.instagram.com/_intiche_"><i class="fab fa-instagram"></i></a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="content-wrapper--content">
+                            <div class="content--author-wrapper">
+                              <p class="content--position">Producer</p>
+                              <h5 class="content--name">Intiche</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="member-wrapper">
+                      <div class="member-wrapper--img-wrapper">
+                        <img src="images/team/gingai.jpg" alt="Gingaí" class="img-fluid">
+                      </div>
+                      <div class="member-wrapper--member-description">
+                        <div class="member-description--content-wrapper">
+                          <div class="content-wrapper--socials">
+                            <ul class="social-icons-type-2">
+                              <li><a href="index.html"><i class="fab fa-facebook-f"></i></a></li>
+                              <li><a href="index.html"><i class="fab fa-twitter"></i></a></li>
+                              <li><a href="index.html"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                          </div>
+                          <div class="content-wrapper--content">
+                            <div class="content--author-wrapper">
+                              <p class="content--position">Producer</p>
+                              <h5 class="content--name">Gingaí</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="member-wrapper">
+                      <div class="member-wrapper--img-wrapper">
+                        <img src="images/team/vini.jpeg" alt="Vini" class="img-fluid">
+                      </div>
+                      <div class="member-wrapper--member-description">
+                        <div class="member-description--content-wrapper">
+                          <div class="content-wrapper--socials">
+                            <ul class="social-icons-type-2">
+                              <li><a href="index.html"><i class="fab fa-facebook-f"></i></a></li>
+                              <li><a href="index.html"><i class="fab fa-twitter"></i></a></li>
+                              <li><a href="index.html"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                          </div>
+                          <div class="content-wrapper--content">
+                            <div class="content--author-wrapper">
+                              <p class="content--position">Producer</p>
+                              <h5 class="content--name">Vini</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="member-wrapper">
+                      <div class="member-wrapper--img-wrapper">
+                        <img src="images/team/carola.jpg" alt="Carola" class="img-fluid">
+                      </div>
+                      <div class="member-wrapper--member-description">
+                        <div class="member-description--content-wrapper">
+                          <div class="content-wrapper--socials">
+                            <ul class="social-icons-type-2">
+                              <li><a href="index.html"><i class="fab fa-facebook-f"></i></a></li>
+                              <li><a href="index.html"><i class="fab fa-twitter"></i></a></li>
+                              <li><a href="index.html"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                          </div>
+                          <div class="content-wrapper--content">
+                            <div class="content--author-wrapper">
+                              <p class="content--position">Founder</p>
+                              <h5 class="content--name">Caro</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="member-wrapper">
+                      <div class="member-wrapper--img-wrapper">
+                        <img src="images/team/vane.jpg" alt="Vanessa" class="img-fluid">
+                      </div>
+                      <div class="member-wrapper--member-description">
+                        <div class="member-description--content-wrapper">
+                          <div class="content-wrapper--socials">
+                            <ul class="social-icons-type-2">
+                              <li><a href="index.html"><i class="fab fa-facebook-f"></i></a></li>
+                              <li><a href="index.html"><i class="fab fa-twitter"></i></a></li>
+                              <li><a href="index.html"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                          </div>
+                          <div class="content-wrapper--content">
+                            <div class="content--author-wrapper">
+                              <p class="content--position">Photographer</p>
+                              <h5 class="content--name">Vanessa</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Items Slider -->
+      <section class="large-section portfolio-section">
+        <div class="container">
+          <div class="row portfolio-section--wrapper">
+            <div class="col-xl-3 section-heading padding-right">
+              <h2 class="section-heading--title">
+                Portfolio
+              </h2>
+              <p class="section-heading--subtitle">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit
+              </p>
+              <div class="button-wrapper">
+                <a class="button btn-type-2" href="portfolio.html">Apply</a>
+              </div>
+            </div>
+            <div class="col-xl-9">
+              <div class="portfolio-slider">
+                <div class="swiper-container portfolio-swiper-type-1 portfolio-slider-type-1">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="tilt-wrapper portfolio-item" data-tilt-value="10" data-tilt-speed="2000"
+                        data-tilt-scale="1" data-tilt-perspective="1200"
+                        style="background-image: url('https://static.wixstatic.com/media/e67b36_6e2a6144dbae4e78b1b3712f1353c117~mv2.jpg/v1/fill/w_1024,h_768,al_c,q_85,enc_auto/e67b36_6e2a6144dbae4e78b1b3712f1353c117~mv2.jpg')">
+                        <div class="portfolio-item--content-wrapper">
+                          <div class="content-wrapper--box-tilt">
+                            <h4 class="box-tilt--title">Volunteer</h4>
+                            <p class="box-tilt--tag">Portugal <span>/</span> Music retreat</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tilt-wrapper portfolio-item" data-tilt-value="10" data-tilt-speed="2000"
+                        data-tilt-scale="1" data-tilt-perspective="1200"
+                        style="background-image: url('https://static.wixstatic.com/media/e67b36_99efff871ff1436981b50fa97452399b~mv2.jpg/v1/fill/w_1024,h_768,al_c,q_85,enc_auto/e67b36_99efff871ff1436981b50fa97452399b~mv2.jpg')">
+                        <div class="portfolio-item--content-wrapper">
+                          <div class="content-wrapper--box-tilt">
+                            <h4 class="box-tilt--title">Fire performer</h4>
+                            <p class="box-tilt--tag">Ibiza <span>/</span> Ecstatic Dance</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tilt-wrapper portfolio-item" data-tilt-value="10" data-tilt-speed="2000"
+                        data-tilt-scale="1" data-tilt-perspective="1200"
+                        style="background-image: url('https://static.wixstatic.com/media/e67b36_7b329c564df14a1da469c50195173c81~mv2.jpg/v1/fill/w_1024,h_768,al_c,q_85,enc_auto/e67b36_7b329c564df14a1da469c50195173c81~mv2.jpg')">
+                        <div class="portfolio-item--content-wrapper">
+                          <div class="content-wrapper--box-tilt">
+                            <h4 class="box-tilt--title">DJ</h4>
+                            <p class="box-tilt--tag">Mallorca <span>/</span> Cacao Ceremony</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="tilt-wrapper portfolio-item" data-tilt-value="10" data-tilt-speed="2000"
+                        data-tilt-scale="1" data-tilt-perspective="1200"
+                        style="background-image: url('https://static.wixstatic.com/media/e67b36_a46e01ea140d49c791514247a59c2184~mv2.jpg/v1/fill/w_1024,h_768,al_c,q_85,enc_auto/e67b36_a46e01ea140d49c791514247a59c2184~mv2.jpg)">
+                        <div class="portfolio-item--content-wrapper">
+                          <div class="content-wrapper--box-tilt">
+                            <h4 class="box-tilt--title">Copywriter</h4>
+                            <p class="box-tilt--tag">Remote opportunity</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="swiper-button-prev-item"><i class="fas fa-long-arrow-alt-left"></i></div>
+                <div class="swiper-button-next-item"><i class="fas fa-long-arrow-alt-right"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Give Back Slider -->
       <section class="large-section portfolio-section">
         <div class="container">
           <div class="row portfolio-section--wrapper">
@@ -356,6 +1032,65 @@
         </div>
       </section>
 
+      <!-- Clients slider -->
+      <section class="clients-slider">
+        <div class="container-fluid ">
+          <div class="row clients-slider--clients-wrapper">
+            <div class="col-xl-9 clients-slider-type-1 bg-position-center overlay dark-overlay bg-size-cover">
+              <div class="swiper-container clients-container-type-1">
+                <div class="swiper-wrapper clients-container-type-1--clients-wrapper">
+                  <div class="swiper-slide clients-wrapper--clients-slide">
+                    <a href="https://www.agamirecords.org" target="_blank" class="clients-slide--clients-inner">
+                      <img src="images/agami_logo_variation2.png" style="filter: invert(1)" alt="Agami Records"
+                        class="img-fluid">
+                    </a>
+                  </div>
+                  <div class="swiper-slide clients-wrapper--clients-slide">
+                    <a href="https://www.instagram.com/ecstaticdanceericeira" target="_blank"
+                      class="clients-slide--clients-inner">
+                      <img src="images/ericeira logo.png" alt="" class="img-fluid">
+                    </a>
+                  </div>
+                  <div class="swiper-slide clients-wrapper--clients-slide">
+                    <a href="https://www.instagram.com/artivistasrecreando" target="_blank"
+                      class="clients-slide--clients-inner">
+                      <img src="images/artivistas logo.png" alt="" class="img-fluid">
+                    </a>
+                  </div>
+                  <div class="swiper-slide clients-wrapper--clients-slide">
+                    <a href="https://www.momentomcollective.com" target="_blank" class="clients-slide--clients-inner">
+                      <img src="https://www.momentomcollective.com/wp-content/uploads/2019/09/black-logo.png"
+                        style="filter: invert(1)" alt="" class="img-fluid">
+                    </a>
+                  </div>
+                  <div class="swiper-slide clients-wrapper--clients-slide">
+                    <a href="https://www.dharmaartinbalance.com" target="_blank" class="clients-slide--clients-inner">
+                      <img src="images/dharma logo.png" style="filter: invert(1)" alt="" class="img-fluid">
+                    </a>
+                  </div>
+                  <div class="swiper-slide clients-wrapper--clients-slide">
+                    <a href="https://www.agamirecords.org" target="_blank" class="clients-slide--clients-inner">
+                      <img src="images/seedsoflight logo.png" alt="" class="img-fluid">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 section-heading padding-left">
+              <h2 class="section-heading--title">
+                Our Partners
+              </h2>
+              <p class="section-heading--subtitle">
+                Lorem ipsum dolor sit amet, consect adipisicing elit. Ad aliquid amet beat
+              </p>
+              <div class="button-wrapper">
+                <a class="button btn-type-1" href="about.html">Reach out<i class="fas fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Contact form-->
       <section
         class="contact-form-section large-section bg-size-cover bg-attachment-fixed bg-position-center overlay dark-overlay"
@@ -420,18 +1155,141 @@
         </div>
       </section>
     </div>
-
-    <!-- Footer -->
+    <!-- Parallax Footer -->
     <footer class="footer">
+      <!-- <div class="container">
+        <div class="row footer-head">
+          <div class="col-xl-3 col-lg-6 col-sm-12">
+            <div class="sidebar-widget">
+              <h6 class="sidebar-widget--sidebar-title">Latest Posts</h6>
+              <ul class="sidebar-widget--post-list">
+                <li class="post-list--post">
+                  <a href="index.html">
+                    <div class="post--img-wrapper">
+                      <img src="http://via.placeholder.com/1920x1280" alt="" class="img-fluid">
+                    </div>
+                  </a>
+                  <div class="post--post-body">
+                    <a href="index.html">
+                      <h6>Good design is…</h6>
+                    </a>
+                    <div class="post-body--description-box">
+                      <p class="description-box--date">June 12, 2020</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="post-list--post">
+                  <a href="index.html">
+                    <div class="post--img-wrapper">
+                      <img src="http://via.placeholder.com/1920x1280" alt="" class="img-fluid">
+                    </div>
+                  </a>
+                  <div class="post--post-body">
+                    <a href="index.html">
+                      <h6>8 tips for your…</h6>
+                    </a>
+                    <div class="post-body--description-box">
+                      <p class="description-box--date">May 28, 2020</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="post-list--post">
+                  <a href="index.html">
+                    <div class="post--img-wrapper">
+                      <img src="http://via.placeholder.com/1920x1280" alt="" class="img-fluid">
+                    </div>
+                  </a>
+                  <div class="post--post-body">
+                    <a href="index.html">
+                      <h6>The great debate…</h6>
+                    </a>
+                    <div class="post-body--description-box">
+                      <p class="description-box--date">Nov 16, 2020</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-sm-12">
+            <div class="sidebar-widget">
+              <h6 class="sidebar-widget--sidebar-title">Dribble Feed</h6>
+              <div class="sidebar-widget--social-networks">
+                <div class="social-networks--dribble-widget">
+                  <a href="https://dribbble.com/" class="gallery--image-item">
+                    <img src="http://via.placeholder.com/1920x1280" alt="" class="img-fluid">
+                    <i class="fab fa-dribbble"></i>
+                  </a>
+                  <a href="https://dribbble.com/" class="gallery--image-item">
+                    <img src="http://via.placeholder.com/1920x1280" alt="" class="img-fluid">
+                    <i class="fab fa-dribbble"></i>
+                  </a>
+                  <a href="https://dribbble.com/" class="gallery--image-item">
+                    <img src="http://via.placeholder.com/1920x1280" alt="" class="img-fluid">
+                    <i class="fab fa-dribbble"></i>
+                  </a>
+                  <a href="https://dribbble.com/" class="gallery--image-item">
+                    <img src="http://via.placeholder.com/1920x1280" alt="" class="img-fluid">
+                    <i class="fab fa-dribbble"></i>
+                  </a>
+                  <a href="https://dribbble.com/" class="gallery--image-item">
+                    <img src="http://via.placeholder.com/1920x1280" alt="" class="img-fluid">
+                    <i class="fab fa-dribbble"></i>
+                  </a>
+                  <a href="https://dribbble.com/" class="gallery--image-item">
+                    <img src="http://via.placeholder.com/1920x1280" alt="" class="img-fluid">
+                    <i class="fab fa-dribbble"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-sm-12">
+            <div class="sidebar-widget">
+              <h6 class="sidebar-widget--sidebar-title">Contact Info</h6>
+              <div class="sidebar-widget--contacts">
+                <ul class="contacts--contact-info">
+                  <li><i class="fa fa-map-marker"></i>
+                    <p>Factory, London, W2 5JU</p>
+                  </li>
+                  <li><i class="fa fa-envelope"></i><a href="index.html">example@gmail.com</a></li>
+                  <li><i class="fa fa-phone"></i><a href="index.html">Phone: 1-123-222-567</a></li>
+                  <li><i class="fas fa-at"></i><a href="index.html">nastyakorbet@gmail.com</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-sm-12">
+            <div class="sidebar-widget">
+              <h6 class="sidebar-widget--sidebar-title">Tag Cloud</h6>
+              <div class="sidebar-widget--tag-cloud">
+                <a href="index.html" class="tag-cloud--tag">Solution</a>
+                <a href="index.html" class="tag-cloud--tag">Design</a>
+                <a href="index.html" class="tag-cloud--tag">Visual</a>
+                <a href="index.html" class="tag-cloud--tag">Gallery</a>
+                <a href="index.html" class="tag-cloud--tag">Scss</a>
+                <a href="index.html" class="tag-cloud--tag">Creative</a>
+                <a href="index.html" class="tag-cloud--tag">Famous</a>
+                <a href="index.html" class="tag-cloud--tag">People</a>
+                <a href="index.html" class="tag-cloud--tag">Food</a>
+                <a href="index.html" class="tag-cloud--tag">Science</a>
+                <a href="index.html" class="tag-cloud--tag">HTML</a> <a href="index.html"
+                  class="tag-cloud--tag">Photo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
       <div class="footer-body">
         <div class="footer-body--wrapper">
-          <p>@ 2022 AWA Movement, All Rights Reserved</p>
+          <p>@ 2023 AWA Movement, All Rights Reserved</p>
         </div>
       </div>
     </footer>
-
   </main>
   <!-- PAGE END -->
+
+  <!-- INCLUDE SCRIPTS START -->
 
   <!--Jquery-->
   <script src="js/jquery-3.3.1.min.js"></script>
@@ -461,7 +1319,8 @@
   <script src="js/jquery-ui.min.js"></script>
   <!-- Main JS-file -->
   <script src="js/main.js"></script>
-  <!-- Email JS -->
+  <!-- INCLUDE SCRIPTS END -->
+
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
   </script>
   <script type="text/javascript">
